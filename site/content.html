@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>iQuarc</title>
+<script src="js/jquery-2.1.4.js" type="text/javascript"></script>
+<script src="js/slick.min.js" type="text/javascript"></script>
+<script src="js/jquery.hoverex.min.js" type="text/javascript"></script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(44.5403, -78.5463),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+<script type="text/javascript">
+	$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="css/slick.css">
+<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+<link rel="stylesheet" type="text/css" href="css/hoverex-all.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div id="main-content">
+		<div class="menu">
+			<div class="container">
+				<nav class="navbar navbar-default" role="navigation">
+	                <div class="container-fluid">
+	                	<div class="navbar-header">
+							<div class="logo-menu"></div>
+	                		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				              <span class="sr-only">Toggle navigation</span>
+				              <span class="icon-bar"></span>
+				              <span class="icon-bar"></span>
+				              <span class="icon-bar"></span>
+						    </button>
+	                	</div>
+	                	<div id="navbar" class="navbar-collapse collapse">
+	                    	<ul>
+	                    		<li><a href="index.html">Home</li>
+	                    		<li><a href="#services">Services</a></li>
+	                    		<li>Training</li>
+	                    		<p><img src="images/iquarc.png"></p>
+	                    		<li><a href="#partners">Partners</a></li>
+	                    		<li><a href="#clients">Clients</a></li>
+	                    		<li><a href="#footer">Contact</a></li>
+	                    		<li><a href="blog.html">Blog</li>
+	                    	</ul>
+	                	</div>
+	                </div>
+	            </nav>
+	        </div>
+		</div>
+		<div id="slider" class="slider">
+			<div class="slides">
+				<p class="slider-p1"><a>Elite professionals</a></p>
+				<p class="slider-p2">fully prepared to act</p>
+				<p class="slider-p3">flexibly and promptly</p>
+			</div>
+		</div>
+		<div class="content container">
+			<div class="left-container col-md-9">
+				<h1>Overview</h1>
+				<p>This training is focused on learning how to minimize the cost of change on large projects, by doing a code design that embraces change. By participating to this training you will understand how to use the Design Patterns and the Design Principles to structure your code in a way that you will enjoy working on it, long after the first lines were written in your project. You will learn how to drive all the code design decisions to minimize the effect of change on your code.<br><br> In any software project there is and there will be a lot of code. The code needs to handle every aspect of the product in very small details. To assure the long life of a project, it is crucial that the code is structured in a clear way. It is like arranging and sorting sheets of papers, in files, folders, drawers and closets, so we can find what we need. Developers arrange code in functions, classes, modules and deployable packages. Any developer spends most of her time on reading and changing the existent code, rather than writing new code. Designing the structures in which we place our code, by following some principles and widely known patterns makes a huge difference in increasing our efficiency, productivity and happiness by achieving a high quality code which is maintainable, reusable and extensible.<br><br> None of the engineering principles or design patterns is meant to be applied as they are described in books. There, they lack the context. However, by knowing them, understanding them and following them you are going to be able tweak and combine them to fit your context and you will get better ideas on how to design your code.<br><br> There are studies showing that raising the overall code quality in a software project will increase productivity, efficiency and shorten schedules.</p>
+				<h1>Motivation</h1>
+				<p>You should invest in having high quality code design because:</p>
+				<ul>
+					<li>it increases your team efficiency and productivity</li>
+					<li>it gives you the means to handle in a manageable way the size and complexity of the project</li>
+					<li>it reduces the cost of change</li>
+					<li>it reduces the cost of adding features to your product</li>
+					<li>it makes your product to stand the test of time</li>
+				</ul>
+				<p>Motivating someone to adopt new practices implies that she needs to know how to apply them, and then she needs to see that by applying them she can get the desired results. This training as a class course covers the first part, by teaching code design concepts, patterns and principles. Follow-up workshops and coaching sessions can address the second part, by exercising the practices on specific contexts and by showing how quality code emerges.</p>
+				<h1>Learning Objectives</h1>
+				<ul>
+					<li>Understand the importance of quality code design</li>
+					<li>Learn to write clean code that works</li>
+					<li>Understand the Separation of Concerns  as the root of Design Patterns and Programming Principles</li>
+					<li>Know and understand main Design Patterns</li>
+					<li>Know and understand Object Oriented Design Principles</li>
+					<li>Learn and understand how to use Dependency Injection</li>
+					<li>Learn the best practices of doing good code design in large projects</li>
+					<li>Understand the Application Infrastructure as the tool to manage and control complexity and size in large projects
+					Target Audience</li>
+				</ul>
+				<p>Any software architect or software developer would benefit greatly from this training.</p>
+				<h1>Prerequisites</h1>
+				<p>Object Oriented Programming basics (inheritance; encapsulation; polymorphism; interfaces; abstract classes; virtual methods; overriding; overloading).</p>
+			</div>
+			<div class="right-container col-md-3">
+				<div class="training-menu">
+					<h1 class="corner">Training</h1>
+					<ul>
+						<li><a href="#">Overview</a></li>
+						<li><a href="#">Motivation</a></li>
+						<li><a href="#">Learning Objectives</a></li>
+						<li><a href="#">Target Audience</a></li>
+						<li><a href="#">Prerequisites</a></li>
+						<li><a href="#">Format and Agenda</a></li>
+						<li><a href="#">Offer</a></li>
+						<li><a href="#">Outline</a></li>
+						<li><a href="#">Testimonials</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="footer" class="footer">
+			<div class="container">
+				<div class="contactus col-md-3">
+					<h1>contact us</h1>
+					<p>Cluj-Napoca<br />Str. Nustiucare nr.5<br />office@iquarc.com</p>
+					<div class="social">
+						<p class="socialp1 col-md-4"><img src="images/social/twitter.png"></p>
+						<p class="socialp2 col-md-4"><img src="images/social/facebook.png"></p>
+						<p class="socialp3 col-md-4"><img src="images/social/email.png"></p>
+						<div class="clearer"></div>
+					</div>
+				</div>
+				<div class="gol col-md-1"></div>
+				<div class="quickmenu col-md-4">
+					<h1>menu</h1>
+					<ul>
+						<li>home</li>
+						<li><a href="#services">services</a></li>
+						<li>training</li>
+						<li><a href="#partners">partners</a></li>
+						<li><a href="#clients">clients</a></li>
+						<li>contact</li>
+						<li>blog</li>
+					</ul>
+				</div>
+				<div class="footer-map col-md-4">
+					<h1>map</h1>
+					<div id="map-canvas"></div>
+				</div>
+			</div>
+			<div class="copyright">
+				<p>Copyright 2015 iQuarc | design by <a href="http://dalimedia.ro" target="_blank">DaliMedia<a></p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

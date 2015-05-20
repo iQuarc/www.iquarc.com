@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>iQuarc</title>
+<script src="js/jquery-2.1.4.js" type="text/javascript"></script>
+<script src="js/slick.min.js" type="text/javascript"></script>
+<script src="js/jquery.hoverex.min.js" type="text/javascript"></script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(44.5403, -78.5463),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+<script type="text/javascript">
+	$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="css/slick.css">
+<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+<link rel="stylesheet" type="text/css" href="css/hoverex-all.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div id="main-blog">
+		<div class="menu">
+			<div class="container">
+				<nav class="navbar navbar-default" role="navigation">
+	                <div class="container-fluid">
+	                	<div class="navbar-header">
+							<div class="logo-menu"></div>
+	                		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				              <span class="sr-only">Toggle navigation</span>
+				              <span class="icon-bar"></span>
+				              <span class="icon-bar"></span>
+				              <span class="icon-bar"></span>
+						    </button>
+	                	</div>
+	                	<div id="navbar" class="navbar-collapse collapse">
+	                    	<ul>
+	                    		<li><a href="index.html">Home</li>
+	                    		<li><a href="#services">Services</a></li>
+	                    		<li><a href="content.html">Training</a></li>
+	                    		<p><img src="images/iquarc.png"></p>
+	                    		<li><a href="#partners">Partners</a></li>
+	                    		<li><a href="#clients">Clients</a></li>
+	                    		<li><a href="#footer">Contact</a></li>
+	                    		<li><a href="blog.html">Blog</li>
+	                    	</ul>
+	                	</div>
+	                </div>
+	            </nav>
+	        </div>
+		</div>
+		<div id="slider" class="slider">
+			<div class="slides">
+				<p class="slider-p1"><a>Elite professionals</a></p>
+				<p class="slider-p2">fully prepared to act</p>
+				<p class="slider-p3">flexibly and promptly</p>
+			</div>
+		</div>
+		<div class="content container">
+			<div class="left-container col-md-9">
+				<div class="blog-left-container tab1">
+					<h1>Repository Implementations</h1>
+					<img src="images/blog/blog_tmp.jpg">
+					<p>In my previous post I have presented a way to separate your data access from the business logic, when a relational database is used. I have shown another implementation of the well-known Repository pattern. Since Martin Fowler described it in his book Patterns of Enterprise Application Architecture it became one of the most implemented pattern in enterprise applications. As it happens with all the design patterns, design principles or any other widely known best practice, we find them in many different implementations, mixed in different ways, but they all have identical things, because they all implement the same solution to a common problem. They all have classes and interfaces named the same. Thing like: Repository, UnitOfWork, IEntity, BaseEntity, ConcurencyException and so on.</p>
+					<button class="rm-corner">Read more</button>
+				</div>
+				<div class="blog-left-container tab2">
+					<h1>Repository Implementations</h1>
+					<img src="images/blog/blog_tmp.jpg">
+					<p>In my previous post I have presented a way to separate your data access from the business logic, when a relational database is used. I have shown another implementation of the well-known Repository pattern. Since Martin Fowler described it in his book Patterns of Enterprise Application Architecture it became one of the most implemented pattern in enterprise applications. As it happens with all the design patterns, design principles or any other widely known best practice, we find them in many different implementations, mixed in different ways, but they all have identical things, because they all implement the same solution to a common problem. They all have classes and interfaces named the same. Thing like: Repository, UnitOfWork, IEntity, BaseEntity, ConcurencyException and so on.</p>
+					<button class="rm-corner">Read more</button>
+				</div>
+				<div class="blog-left-container tab3">
+					<h1>Repository Implementations</h1>
+					<img src="images/blog/blog_tmp.jpg">
+					<p>In my previous post I have presented a way to separate your data access from the business logic, when a relational database is used. I have shown another implementation of the well-known Repository pattern. Since Martin Fowler described it in his book Patterns of Enterprise Application Architecture it became one of the most implemented pattern in enterprise applications. As it happens with all the design patterns, design principles or any other widely known best practice, we find them in many different implementations, mixed in different ways, but they all have identical things, because they all implement the same solution to a common problem. They all have classes and interfaces named the same. Thing like: Repository, UnitOfWork, IEntity, BaseEntity, ConcurencyException and so on.</p>
+					<button class="rm-corner">Read more</button>
+				</div>
+			</div>
+			<div class="right-container col-md-3">
+				<div class="training-menu">
+					<h1 class="corner">Training</h1>
+					<ul>
+						<li><a href="#">Overview</a></li>
+						<li><a href="#">Motivation</a></li>
+						<li><a href="#">Learning Objectives</a></li>
+						<li><a href="#">Target Audience</a></li>
+						<li><a href="#">Prerequisites</a></li>
+						<li><a href="#">Format and Agenda</a></li>
+						<li><a href="#">Offer</a></li>
+						<li><a href="#">Outline</a></li>
+						<li><a href="#">Testimonials</a></li>
+					</ul>
+				</div>
+				<div class="joining">
+					<h1 class="corner">I'm joining</h1>
+					<div class="joining-content">
+						<img src="images/blog/craft.jpg" />
+						<p>Get a <b>10% discount</b> using this code ILOVECRAFT162</p>
+					</div>
+				</div>
+				<div class="recent-posts">
+					<h1 class="corner">Recent posts</h1>
+					<ul>
+						<li>Repository Implementations</li>
+						<li>Separating Data Access Concern</li>
+						<li>Disposable Instances Series</li>
+						<li>Disposing Instances when Using Inversion of Control</li>
+						<li>E-mail Course: Creating a Blog</li>
+					</ul>
+				</div>
+				<div class="i-blog-about">
+					<h1 class="corner">I Blog About</h1>
+					<p>abstraction blogging code design cohesion coupling course data data access deferred execution Dependency Injection design design patterns Design Practices DI Disposable encapsulation Entity Framework Inversion of Control itcamp14 conference Cluj Microsoft LINQ Object Oriented Design Principles ORM Patterns QA quality Queryable refactor Repository separation of concerns Service Locator SOLID tdd Testing training Unit of Work unit testing Unity</p>
+				</div>
+			</div>
+		</div>
+		<div id="footer" class="footer">
+			<div class="container">
+				<div class="contactus col-md-3">
+					<h1>contact us</h1>
+					<p>Cluj-Napoca<br />Str. Nustiucare nr.5<br />office@iquarc.com</p>
+					<div class="social">
+						<p class="socialp1 col-md-4"><img src="images/social/twitter.png"></p>
+						<p class="socialp2 col-md-4"><img src="images/social/facebook.png"></p>
+						<p class="socialp3 col-md-4"><img src="images/social/email.png"></p>
+						<div class="clearer"></div>
+					</div>
+				</div>
+				<div class="gol col-md-1"></div>
+				<div class="quickmenu col-md-4">
+					<h1>menu</h1>
+					<ul>
+						<li>home</li>
+						<li><a href="#services">services</a></li>
+						<li>training</li>
+						<li><a href="#partners">partners</a></li>
+						<li><a href="#clients">clients</a></li>
+						<li>contact</li>
+						<li>blog</li>
+					</ul>
+				</div>
+				<div class="footer-map col-md-4">
+					<h1>map</h1>
+					<div id="map-canvas"></div>
+				</div>
+			</div>
+			<div class="copyright">
+				<p>Copyright 2015 iQuarc | design by <a href="http://dalimedia.ro" target="_blank">DaliMedia<a></p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
