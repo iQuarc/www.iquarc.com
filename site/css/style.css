@@ -56,7 +56,7 @@ a:hover{
 }
 .slider{
 	height: 536px;
-	background-image: url(../images/slide.jpg);
+	background-image: url(/images/slide.jpg);
 	background-size: cover;
 	padding-top: 75px;
 }
@@ -79,7 +79,7 @@ a:hover{
 	padding:30px;
 	overflow: hidden;
 	position: relative;
-	background-image: url(../images/corner.png);
+	background-image: url(/images/corner.png);
 	background-repeat: no-repeat;
 	background-size: contain;
 	padding-bottom: 0px;
@@ -220,31 +220,31 @@ a:hover{
 	right: 0;
 }
 .services-tab1 .inner-circle{
-	background-image: url(../images/services_tab1.png);
+	background-image: url(/images/services_tab1.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 90%;
 }
 .services-tab2 .inner-circle{
-	background-image: url(../images/services_tab2.png);
+	background-image: url(/images/services_tab2.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 90%;
 }
 .services-tab3 .inner-circle{
-	background-image: url(../images/services_tab3.png);
+	background-image: url(/images/services_tab3.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 90%;
 }
 .services-tab4 .inner-circle{
-	background-image: url(../images/services_tab4.png);
+	background-image: url(/images/services_tab4.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 90%;
 }
 .services-tab5 .inner-circle{
-	background-image: url(../images/services_tab5.png);
+	background-image: url(/images/services_tab5.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 90%;
@@ -302,17 +302,17 @@ a:hover{
 	border-color: #fff;
 }
 .partners-tab2 .circle{
-	background-image: url(../images/cristi.png);
+	background-image: url(/images/cristi.png);
 	background-repeat: no-repeat;
 	background-position: center;
 }
 .partners-tab3 .circle{
-	background-image: url(../images/florin.png);
+	background-image: url(/images/florin.png);
 	background-repeat: no-repeat;
 	background-position: center;
 }
 .partners-tab4 .circle{
-	background-image: url(../images/catalin.png);
+	background-image: url(/images/catalin.png);
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -462,12 +462,12 @@ ul.text-slider{
 	padding-left: 0px;
 }
 .slick-prev{
-	background-image: url(../images/prev.png);
+	background-image: url(/images/prev.png);
 	background-repeat: no-repeat;
 	background-size: contain;
 }
 .slick-next{
-	background-image: url(../images/next.png);
+	background-image: url(/images/next.png);
 	background-repeat: no-repeat;
 	background-size: contain;
 }
@@ -496,7 +496,7 @@ ul.text-slider{
 	right: 250px;
 }
 .logo-menu{
-	background-image: url(../images/iquarc.png);
+	background-image: url(/images/iquarc.png);
 	width: 200px;
 	height: 62px;
 	background-repeat: no-repeat;
@@ -549,10 +549,10 @@ ul.text-slider{
   	transform: translateY(-50%);
 }
 .text-slider .slick-prev{
-	background-image: url(../images/prevtxt.png);
+	background-image: url(/images/prevtxt.png);
 }
 .text-slider .slick-next{
-	background-image: url(../images/nexttxt.png);
+	background-image: url(/images/nexttxt.png);
 }
 .hvr-outline-in {
   vertical-align: middle;
@@ -652,7 +652,7 @@ ul.text-slider{
 	background-size: 30px;
 }
 .fb{
-	background-image: url(../images/social/fb_small.png);
+	background-image: url(/images/social/fb_small.png);
 	background-repeat: no-repeat;
 	background-size: contain;
 	width: 30px;
@@ -662,8 +662,19 @@ ul.text-slider{
 	background-color: #000;
 	background-size: 30px;
 }
+.li{
+	background-image: url(/images/social/In-White-115px-R.png);
+	background-repeat: no-repeat;
+	background-size: 26px;
+	background-position: center;
+	width: 30px;
+	height: 30px;
+}
+.li:hover{
+	background-color: #000;
+}
 .em{
-	background-image: url(../images/social/em_small.png);
+	background-image: url(/images/social/em_small.png);
 	background-repeat: no-repeat;
 	background-size: contain;
 	width: 30px;
@@ -833,23 +844,6 @@ ul.text-slider{
 	text-align: left;
 	padding-left: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*Media query*/
 
